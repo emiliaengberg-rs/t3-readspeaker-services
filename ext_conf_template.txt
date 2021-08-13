@@ -1,0 +1,88 @@
+# webReader
+
+paths {
+	
+	# cat=webreader paths; type=string; label=webReader Script URL: The URL where the webReader JavaScript file should be loaded from. E.g. https://cdn-eu.readspeaker.com/script/<Customer ID>/webReader/webReader.js?pids=wr
+	wrScriptUrl = 
+
+	# cat=webreader paths; type=string; label=API URL: The URL of the backend TTS API (Enterprise). E.g. https://app-eu.readspeaker.com/cgi-bin/rsent
+	wrAPIUrl =
+
+	# cat=webreader paths; type=options[End of body=eob,Head=head]; label=Placement of the webReader Script Link.: End of body = Right before the end of the BODY element (default), Head = In the HEAD element of the page.
+	wrScriptPlacement = eob
+
+}
+
+configuration {
+	
+	# cat=webreader configuration; type=string; label=Customer ID: Your customer ID (provided by ReadSpeaker).
+	wrCustomerId =	
+	
+	# cat=webreader configuration; type=string; label=Inline Configuration: Inline configuration. Should be a JavaScript object, e.g. { general: { usePost: true } }
+	wrInlineConfig =
+
+}
+
+reading {
+	
+	# cat=webreader reading; type=string; label=Reading Language: The reading language (five-character code, e.g. en_us for American English).
+	wrReadingLang =
+
+	# cat=webreader reading; type=options[Yes - Guess=yes,No - Set manually=no]; label=Attempt to Guess Reading Language: If Yes, then webReader will guess the reading language based on the Typo3 language. Note that setting this option to Yes will override the Reading Language value. Also, leave the Voice field empty if you enable this option.
+	wrAutoLang = no
+
+	# cat=webreader reading; type=string; label=Voice: Specify a voice (optional). Note that the voice must be available in your ReadSpeaker account. Leave this field empty if Attempt to Guess Reading Language is set to Yes.
+	wrVoice =
+
+	# cat=webreader reading; type=string; label=Reading Area ID: ID of an element that surrounds the content that is to be read. E.g. main-content, if the element has the ID #main-content.
+	wrReadId =
+
+	# cat=webreader reading; type=string; label=Reading Area Class: CSS class of elements that surrounds the content that is to be read. E.g. text-content, if the elements have the class .text-content.
+	wrReadClass =	
+
+}
+
+phrases {
+
+	# cat=webreader ui; type=string; label=Listen Label: Label of the Listen button. E.g. "Listen"
+	wrListenLabel =
+
+	# cat=webreader ui; type=string; label=Listen Button Alt Text: The alternative text of the Listen button. E.g. "Listen to this page using ReadSpeaker".
+	wrListenAltText =
+}
+
+# docReader
+
+autoadd {
+	
+	# cat=docreader; type=boolean; label=Add docReader Icons to Document Links: Automatically detects document links and adds a docReader icon next to them.
+	drEnable = 0
+
+	# cat=docreader; type=string; label=docReader Customer ID: Either a string or a numeric ID. Refer to the implementation instructions in the ReadSpeaker Admin Portal.
+	drCustomerId = 
+
+	# cat=docreader; type=string; label=Document Reading Language: A five-character locale string. E.g. en_us for American English. Note: To set the language of each document individually, use the hreflang attribute.
+	drReadingLang =
+
+	# cat=docreader; type=options[Yes - Guess=yes,No - Set manually=no]; label=Attempt to Guess Document Reading Language: If Yes, then docReader will guess the reading language based on the Typo3 language. Note that setting this option to Yes will override the Document Reading Language value. Make sure that Use the hreflang Attribute is unchecked before enabling this option.
+	drAutoLang = no
+
+	# cat=docreader; type=boolean; label=Use the hreflang Attribute: If found on a document link, the hreflang attribute will be used to determine the document's language. If enabled, this option overrides the Document Reading Language and Attempt to Guess Document Reading Language fields.
+	drUseHrefLang = 1
+
+	# cat=docreader; type=options[Before Link=before,After Link=after]; label=Icon Placement: Whether the docReader icon should be added before or after each found document link.
+	drIconPlacement = after
+
+	# cat=docreader; type=string; label=Document Class: A custom CSS class that will be used to identify document links. E.g. rspkr_add_drlink.
+	drDocClass = rspkr_add_drlink
+
+	# cat=docreader; type=string; label=Icon Added Class: CSS class to add to document links to which a docReader icon has ben added. E.g. rspkr_dr_added
+	drAddedClass = rspkr_dr_added
+
+	# cat=docreader; type=string; label=docReader Icon URL: A URL from where the docReader icon should be fetched. E.g. https://media.readspeaker.com/images/buttons/listen_icons/icon_16px.gif
+	drImageUrl = https://media.readspeaker.com/images/buttons/listen_icons/icon_16px.gif
+
+	# cat=docreader; type=string; label=docReader Icon Alt Text: The alternative text that will be displayed in a tooltip when the user hovers the mouse pointer over the icon.
+	drImageAlt = 
+
+}

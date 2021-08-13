@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" target-language="es" datatype="plaintext" original="EXT:readspeaker_services/Resources/Private/Language/locallang.xlf" date="2021-06-08T15:55:00" product-name="readspeaker_services">
+		<header/>
+	 	<body>
+			<trans-unit id="webreader.listenButton.label" resname="webreader.listenButton.label">
+				<source>Listen</source>
+				<target>Escuchar</target>
+			</trans-unit>
+			<trans-unit id="webreader.listenButton.altText" resname="webreader.listenButton.altText">
+				<source>Listen to this page using ReadSpeaker</source>
+				<target>Escucha esta página utilizando ReadSpeaker webReader</target>
+			</trans-unit>
+			<trans-unit id="general.autoLangGuess" resname="general.autoLangGuess">
+				<source>en_us</source>
+				<target>es_es</target>
+			</trans-unit>
+			<trans-unit id="docreader.icon.altText" resname="docreader.icon.altText">
+				<source>Open this document with ReadSpeaker docReader</source>
+				<target>Abrir este documento utilizando el ReadSpeaker docReader</target>
+			</trans-unit>
+	  </body>
+   </file>
+</xliff>

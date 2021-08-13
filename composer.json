@@ -1,0 +1,25 @@
+{
+	"name": "readspeaker/readspeaker-services",
+	"authors": [
+		{
+			"name": "ReadSpeaker",
+			"role": "Developer"
+		}
+	],
+	"type": "typo3-cms-extension",
+	"description": "A Typo3 extension for easily integrating ReadSpeaker webReader and docReader into your website. Please note that you need a valid ReadSpeaker license in order to use this extension. Learn more on www.readspeaker.com.",
+	"license": "GPL-2.0-or-later",
+	"autoload": {
+		"psr-4": {
+			"Readspeaker\\ReadspeakerServices\\": "Classes/"
+		}
+	},
+	"require": {
+		"typo3/cms-core": ">=10.4 <11.0.0"
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "readspeaker_services"
+		}
+	}
+}

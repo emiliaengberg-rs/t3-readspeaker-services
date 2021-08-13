@@ -16,3 +16,4 @@
 .webprj
 nbproject
 .DS_Store
+/.env

@@ -84,7 +84,7 @@ Placement of the webReader Script Link
 
 You can decide where the webReader JavaScript (webReader.js) will be inserted into the page.
 
-Depending on the structure of your code, the placement of the JavaScript link can be important, but if you are unsure, set it to End of body, which should work in most cases.
+Depending on the structure of your code, the placement of the JavaScript link can be important, but if you are unsure, set it to Head, which should work in most cases.
 
 **Fluid Parameter Name**
 

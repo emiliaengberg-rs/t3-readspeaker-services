@@ -79,7 +79,7 @@
 					->addJsInlineCode("dr-config-data", $dr_configuration);
 
 				// If we're using docReader, make sure it loads with webReader.
-				$arguments["scriptUrl"] .= "&amp;dload=DocReader.AutoAdd";
+				$arguments["scriptUrl"] .= "&dload=DocReader.AutoAdd";
 
 			}
 
@@ -96,7 +96,7 @@
 
 				case "head" :
 					GeneralUtility::makeInstance(AssetCollector::class)
-						->addJavaScript('wr-main-script', htmlentities($arguments["scriptUrl"]), [], ['priority' => true]);
+						->addJavaScript('wr-main-script', htmlentities($arguments["scriptUrl"]), ["id" => "rs_req_Init"], ['priority' => true]);
 					break;			
 
 				default :

@@ -9,7 +9,7 @@ paths {
 	wrAPIUrl =
 
 	# cat=webreader paths; type=options[End of body=eob,Head=head]; label=Placement of the webReader Script Link.: End of body = Right before the end of the BODY element (default), Head = In the HEAD element of the page.
-	wrScriptPlacement = eob
+	wrScriptPlacement = head
 
 }
 

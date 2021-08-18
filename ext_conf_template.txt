@@ -8,7 +8,7 @@ paths {
 	# cat=webreader paths; type=string; label=API URL: The URL of the backend TTS API (Enterprise). E.g. https://app-eu.readspeaker.com/cgi-bin/rsent
 	wrAPIUrl =
 
-	# cat=webreader paths; type=options[End of body=eob,Head=head]; label=Placement of the webReader Script Link.: End of body = Right before the end of the BODY element (default), Head = In the HEAD element of the page.
+	# cat=webreader paths; type=options[End of body=eob,Head=head]; label=Placement of the webReader Script Link.: End of body = Right before the end of the BODY element, Head = In the HEAD element of the page (default).
 	wrScriptPlacement = head
 
 }

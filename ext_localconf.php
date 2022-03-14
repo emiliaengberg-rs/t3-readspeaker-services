@@ -12,13 +12,3 @@ defined("TYPO3_MODE") || die("Access denied.");
 		\Readspeaker\ReadspeakerServices\Controller\ReadspeakerServicesController::class => "",
 	]
 );
-
-call_user_func(function() {
-   $extensionKey = 'ReadspeakerServices';
-
-   \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTypoScript(
-      $extensionKey,
-      'setup',
-      "@import 'EXT:readspeaker_services/Configuration/TypoScript/setup.typoscript'"
-   );
-});

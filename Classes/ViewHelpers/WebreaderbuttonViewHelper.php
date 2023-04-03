@@ -18,6 +18,8 @@
 
 		protected $escapeOutput = false;
 
+		public static $btnid = 1;
+
 		public function initializeArguments() {
 
 			$this->ext_config = GeneralUtility::makeInstance(ExtensionConfiguration::class)->get("readspeaker_services");
@@ -101,8 +103,7 @@
 
 				default :
 					GeneralUtility::makeInstance(PageRenderer::class)
-						->addJsFooterLibrary('wr-main-script', htmlentities($arguments["scriptUrl"]));
-
+						->addJsFooterLibrary('wr-main-script', htmlentities($arguments["scriptUrl"]), 'text/javascript', false, false, '', true);
 			}
 
 
@@ -121,8 +122,8 @@
 
 			// Return the listen button's markup
 			return 
-				"<div id=\"readspeaker_button1\" class=\"rs_skip rsbtn rs_preserve\">" .
-				"	<a class=\"rsbtn_play\" accesskey=\"L\" title=\"$listen_alt_text\" href=\"$href\" role=\"button\">" .
+				"<div id=\"readspeaker_button" . self::$btnid++ . "\" class=\"rs_skip rsbtn rs_preserve\">" .
+				"	<a class=\"rsbtn_play\" title=\"$listen_alt_text\" href=\"$href\" role=\"button\">" .
 				"		<span class=\"rsbtn_left rsimg rspart\"><span class=\"rsbtn_text\"><span>$listen_label</span></span></span>" .
 				"		<span class=\"rsbtn_right rsimg rsplay rspart\"></span>" .
 				"	</a>" .

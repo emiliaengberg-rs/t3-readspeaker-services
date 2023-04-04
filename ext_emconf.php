@@ -9,10 +9,10 @@ $EM_CONF[$_EXTKEY] = [
 	"author_email" => "andreas.stenberg@readspeaker.com",
 	"state" => "beta",
 	"clearCacheOnLoad" => true,
-	"version" => "0.9.3",
+	"version" => "1.0.2",
 	"constraints" => [
 		"depends" => [
-			"typo3" => "10.4.0-10.4.99"
+			"typo3" => "11.0.0-11.4.99"
 		],
 	],
 ];

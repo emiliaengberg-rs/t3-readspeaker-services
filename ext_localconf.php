@@ -11,6 +11,3 @@ defined("TYPO3") || die("Access denied.");
 		\Readspeaker\ReadspeakerServices\Controller\ReadspeakerServicesController::class => "",
 	]
 );
-
-
-

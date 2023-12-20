@@ -21,7 +21,6 @@
 		public static $btnid = 1;
 
 		public function initializeArguments() {
-
 			$this->ext_config = GeneralUtility::makeInstance(ExtensionConfiguration::class)->get("readspeaker_services");
 
 			// webReader parameters

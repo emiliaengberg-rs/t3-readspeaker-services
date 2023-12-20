@@ -7,12 +7,12 @@ $EM_CONF[$_EXTKEY] = [
 	"author" => "Andreas Stenberg",
 	"author_company" => "ReadSpeaker",
 	"author_email" => "andreas.stenberg@readspeaker.com",
-	"state" => "beta",
+	"state" => "stable",
 	"clearCacheOnLoad" => true,
-	"version" => "1.0.2",
+	"version" => "1.1.0",
 	"constraints" => [
 		"depends" => [
-			"typo3" => "11.0.0-11.4.99"
+			"typo3" => "12.0.0-12.9.99"
 		],
 	],
 ];

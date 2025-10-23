@@ -3,8 +3,6 @@
 	namespace Readspeaker\ReadspeakerServices\ViewHelpers;
 
 	use TYPO3Fluid\Fluid\Core\ViewHelper\AbstractViewHelper;
-	use TYPO3Fluid\Fluid\Core\Rendering\RenderingContextInterface;
-	use TYPO3Fluid\Fluid\Core\ViewHelper\Traits\CompileWithRenderStatic;
 	use TYPO3\CMS\Core\Utility\GeneralUtility;
 	use TYPO3\CMS\Core\Configuration\ExtensionConfiguration;	
 	use TYPO3\CMS\Core\Page\AssetCollector;
@@ -13,7 +11,6 @@
 
 	class WebreaderbuttonViewHelper extends AbstractViewHelper {
 
-		use CompileWithRenderStatic;
 		private $ext_config;
 
 		protected $escapeOutput = false;
@@ -51,11 +48,8 @@
 			$this->registerArgument("drImageAlt", "string", "Icon Image Alt Text", false, $this->ext_config["autoadd"]["drImageAlt"]);
 		}
 
-		public static function renderStatic(
-			array $arguments,
-			\Closure $renderChildrenClosure,
-			RenderingContextInterface $renderingContext
-		) {
+		public function render() {
+			$arguments = $this->arguments;
 
 			$docreader_script_path = "EXT:readspeaker_services/Resources/Public/JavaScript/ReadSpeaker.docReader.AutoAdd.js";
 			$use_docreader = false;

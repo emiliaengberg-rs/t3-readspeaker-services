@@ -37,27 +37,27 @@ Use this mode if you want to enable the extension on a single page or just a few
 
    To use webReader and/or docReader as a plugin, go to *Web > Page* and locate the page where you want it to be added.
 
-   Click on the :guilabel:`+ Content` button where you want webReader to be displayed:
+   Click on the :guilabel:`+ Create new content` button where you want webReader to be displayed:
 
    .. figure:: ../Images/using-plugin-content.png
       :class: with-shadow
       :alt: Adding content to a web page
 
-2. Select plug-in type
+2. Select plugin type
 
-   Select *General Plugin* from the *Plugins* tab
+   Select the *Plugins* tab
 
    .. figure:: ../Images/using-plugin-pluginstab.png
       :class: with-shadow
-      :alt: The plug-ins tab
+      :alt: The plugins tab
 
 3. Select ReadSpeaker Services
 
-   Select *ReadSpeaker Services* from the *Plugin* tab
+   Select *ReadSpeaker Services* from the *Plugins* tab
 
    .. figure:: ../Images/using-plugin-select.png
       :class: with-shadow
-      :alt: The plug-in selector
+      :alt: The plugin selector
 
 4. Save
 
@@ -67,7 +67,7 @@ Use this mode if you want to enable the extension on a single page or just a few
       :class: with-shadow
       :alt: Save the plugin selection
 
-5. Verify that the plug-in is visible on the page
+5. Verify that the plugin is visible on the page
 
    The plugin should now be visible in the content section:
 
@@ -96,45 +96,45 @@ Use this method if you want the extension to be enabled on all pages in the webs
 
 .. rst-class:: bignums-xxl
 
-1. Locate the root template
+1. Locate the root TypoScript record
 
-   Go to Web > Template and select the website's root page:
+   Go to Site Management > TypoScrpt and select the TypoScript record with the root level flag:
 
    .. figure:: ../Images/using-main-root.png
       :class: with-shadow
-      :alt: Page template list
+      :alt: TypoScript selected in list
 
-2. Info/Modify
+2. Edit TypoScript Record
 
-   Make sure *Info/Modify* is selected in the dropdown at the top of the page:
+   Make sure *Edit TypoScript Record* is selected in the dropdown at the top of the page:
 
    .. figure:: ../Images/using-main-infomodify.png
       :class: with-shadow
-      :alt: Info/Modify selected in the drop-down menu
+      :alt: Edit TypoScript Record selected in the drop-down menu
 
 3. Set it up
 
-   Now click on *Setup*:
+   Now click on :guilabel:`Setup`:
 
    .. figure:: ../Images/using-main-setup.png
       :class: with-shadow
-      :alt: Setup part of template section list
+      :alt: Setup part of TypoScript record list
 
-4. Alter the TypoScript code
+4. Alter the TypoScript record
 
-   webReader can be added as a :typoscript:`FLUIDTEMPLATE` object in the TypoScript code:
+   webReader can be added as a :typoscript:`FLUIDTEMPLATE` object in the TypoScript record:
 
    .. code-block:: typoscript
 
-      page.20 = FLUIDTEMPLATE
-      page.20 {
+      page.10 = FLUIDTEMPLATE
+      page.10 {
          templateName = Webreader
          templateRootPaths {
             10 = EXT:readspeaker_services/Resources/Private/Templates
          }
       }
 
-   Where to insert the code depends on where you want the webReader button to show up. In the example below, the Listen button will always be displayed at the top of the screen, above any page content:
+   Objects will be rendered on the page in the order of the numbers, not in the order they get defined in the TypoScript record. The placement of the webReader button therefore depends on the number assigned to the object. In the example below, the Listen button will always be displayed at the top of the screen, above any page content:
 
    .. figure:: ../Images/using-main-setupcode.png
       :class: with-shadow

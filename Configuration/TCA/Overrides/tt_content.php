@@ -4,5 +4,5 @@
 	"ReadspeakerServices",
 	"ReadspeakerServices",
 	"ReadSpeaker Services",
-	"EXT:readspeaker_services/Resources/Public/Icons/Extension.svg"
+	"rs-extension-icon"
 );

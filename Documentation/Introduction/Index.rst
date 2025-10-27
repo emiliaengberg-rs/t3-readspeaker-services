@@ -6,11 +6,11 @@
 Introduction
 ============
 
-This document describes the process of installing, configuring and using the ReadSpeaker for Typo3 extension in Typo3 version 10.4+.
+This document describes the process of installing, configuring and using the ReadSpeaker for TYPO3 extension in TYPO3 version 10.4+.
 
 .. note::
 
-   You need to have administrator access to the Typo3 backend in order to be able to install and use the extension.
+   You need to have administrator access to the TYPO3 backend in order to be able to install and use the extension.
 
 .. _readspeaker_names:
 
@@ -22,7 +22,7 @@ The correct way to spell the product names is:
 * webReader
 * docReader
 
-Due to technical limitations we have however had to change the capitalization in some places, in order to comply with Typo3's naming conventions.
+Due to technical limitations we have however had to change the capitalization in some places, in order to comply with TYPO3's naming conventions.
 
 
 .. _what_it_does:
@@ -30,7 +30,7 @@ Due to technical limitations we have however had to change the capitalization in
 What does it do?
 ================
 
-ReadSpeaker Services for Typo3 enables you as a Typo3 administrator or editor to easily integrate ReadSpeaker webReader and/or ReadSpeaker docReader into your website.
+ReadSpeaker Services for TYPO3 enables you as a TYPO3 administrator or editor to easily integrate ReadSpeaker webReader and/or ReadSpeaker docReader into your website.
 
 .. _screenshots:
 

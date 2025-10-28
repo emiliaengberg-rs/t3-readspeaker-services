@@ -6,7 +6,7 @@
 Localization
 ============
 
-The products webReader and docReader have localization built in. The general rule is that the UI of webReader and docReader will follow the reading language. In the ReadSpeaker Services extension for Typo3 it is however possible to customize three phrases that are part of the extension, but not part of the products per se. These are:
+The products webReader and docReader have localization built in. The general rule is that the UI of webReader and docReader will follow the reading language. In the ReadSpeaker Services extension for TYPO3 it is however possible to customize three phrases that are part of the extension, but not part of the products per se. These are:
 
 
 .. |lbl| image:: ../Images/webreader-listen-button.png

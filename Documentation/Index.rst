@@ -29,7 +29,7 @@ ReadSpeaker Services
    `CC BY-NC-ND 4.0 <https://creativecommons.org/licenses/by-nc-nd/4.0/>`__ (Creative Commons)
    license
 
-ReadSpeaker Services is an extension that facilitates the integration of ReadSpeaker webReader and ReadSpeaker docReader on your Typo3 website.
+ReadSpeaker Services is an extension that facilitates the integration of ReadSpeaker webReader and ReadSpeaker docReader on your TYPO3 website.
 
 .. note::
 
